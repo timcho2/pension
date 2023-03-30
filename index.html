@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>이미지 부드럽게 확대하기</title>
+	<style>
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		img {
+			transition: transform 0.3s ease-in-out;
+			max-width: 300px;
+			max-height: 300px;
+		}
+		img:hover {
+			transform: scale(1.1);
+		}
+	</style>
+	<title>나의 펜션</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    nav li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    
+    nav li:last-child {
+        margin-right: 0;
+    }
+    
+    nav a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .intro {
+        text-align: center;
+        padding: 100px 0;
+    }
+    
+    .intro h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+    
+    .intro p {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+    }
+    
+    .button {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+    
+    .button:hover {
+        background-color: #fff;
+        color: #333;
+    }
+    
+    .photos {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    
+    .photos img {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        transition: width 0.5s ease, height 0.5s ease;
+    }
+    .photos {
+    display: flex;
+    justify-content: center; /* 이미지들을 가운데 정렬합니다. */
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box; /* padding 값이 전체 크기에 포함되도록 box-sizing을 추가합니다. */
+}
+.photos img:hover {
+        width: 40%;
+        height: auto;
+}
+
+.photos img {
+    flex: 1; /* 이미지 너비를 자동으로 설정합니다. */
+    margin: 10px; /* 이미지 사이에 마진을 추가합니다. */
+    margin-bottom: 20px;
+}
+
+
+
+    </style>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index2.html">홈</a></li>
+				<li><a href="#">객실 소개</a></li>
+				<li><a href="#">예약하기</a></li>
+				<li><a href="#">고객 후기</a></li>
+				<li><a href="#">오시는 길</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="intro">
+			<h1>나의 펜션, 푸른 언덕</h1>
+			<p>숲 속에 자리한 아늑한 펜션에서 힐링하세요.</p>
+			<a href="#" class="button">예약하기</a>
+		</section>
+		<section class="photos">
+            <figure>
+                <img src="청소기.jpeg" alt="객실 1">
+                <figcaption>객실 1 - 청소기</figcaption>
+            </figure>
+            <figure>
+                <img src="buzz.png" alt="객실 2">
+                <figcaption>객실 2 - 풍경</figcaption>
+            </figure>
+            <figure>
+                <img src="ohc.png" alt="객실 3">
+                <figcaption>객실 3 - 눈</figcaption>
+            </figure>
+        </section>
+        
+	</main>
+	<footer>
+		<p>Copyright © 
+			<script type="text/javascript">
+				document.write(new Date().getFullYear());
+			</script> 
+			나의 펜션. All rights reserved.</p>
+	</footer>
+</body>
+</html>
+
